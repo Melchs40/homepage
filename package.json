@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Melchs40/template.git"
+    "url": "git+https://github.com/Melchs40/homepage.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Melchs40/template/issues"
+    "url": "https://github.com/Melchs40/homepage/issues"
   },
-  "homepage": "https://github.com/Melchs40/template#readme",
+  "homepage": "https://github.com/Melchs40/homepage#readme",
   "devDependencies": {
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
