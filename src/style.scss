@@ -1,0 +1,47 @@
+html,
+body {
+  background-color: white;
+  margin: 0;
+}
+
+#content {
+  height: auto;
+  background-color: lightblue;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#nav-container {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 4rem;
+  width: calc(100% - 6rem);
+  //   margin-left: 1rem;
+  //   padding-left: 1rem;
+  //   padding-right: 1rem;
+  background-color: lightcoral;
+}
+
+#test-child2 {
+  height: 880px;
+  width: 100%;
+  background-color: lightgreen;
+  padding-top: 6rem;
+}
+
+#test-child3 {
+  height: 200px;
+  width: 100%;
+  background-color: orange;
+}
+
+#nav-link-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: end;
+}
+
+.nav-link {
+  margin: 1rem;
+}
