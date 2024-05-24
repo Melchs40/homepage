@@ -6,7 +6,7 @@ meBackground.setAttribute('id', 'me-background');
 
 let meBackgroundImage = document.createElement('img');
 meBackgroundImage.setAttribute('id', 'me-background-image');
-meBackgroundImage.src = '../images/pexels-hngstrm-1939485.jpg';
+meBackgroundImage.src = '../images/pexels-teddy-2168238.jpg';
 
 let firstName = document.createElement('h1');
 firstName.classList.add('main-text');
@@ -38,17 +38,17 @@ me.appendChild(lastName);
 me.appendChild(firstTitle);
 me.appendChild(lastTitle);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('main-text-transition');
-      return;
-    }
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('main-text-transition');
+//       return;
+//     }
 
-    entry.target.classList.remove('main-text-transition');
-  });
-});
+//     entry.target.classList.remove('main-text-transition');
+//   });
+// });
 
-document.addEventListener('DOMContentLoaded', function () {
-  names.forEach((name) => observer.observe(name));
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//   names.forEach((name) => observer.observe(name));
+// });
