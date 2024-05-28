@@ -1,7 +1,8 @@
 export let about = document.createElement('div');
-about.setAttribute('id', 'about-container');
+about.setAttribute('id', 'about-me');
 
 let aboutContainer = document.createElement('div');
+aboutContainer.setAttribute('id', 'about-container');
 about.appendChild(aboutContainer);
 
 let aboutMeTitle = document.createElement('h1');
@@ -18,12 +19,12 @@ aboutContainer.appendChild(aboutMePara);
 
 let aboutMePara2 = document.createElement('p');
 aboutMePara2.classList.add('about-me-para');
-aboutMePara2.innerHTML = `I've always enjoyed anything related to technology and had the urge to create things myself. From building LEGO sets in my youth to building custom PCs as an adult and jailbreaking my iPhone to solving just about any tech issue with my friends and family, I've done these in my spare time. Now I've put what I did in my free time and worked to build it into a career.`;
+aboutMePara2.innerHTML = `I've always enjoyed anything related to computers and had the urge to mess around and create things myself. From building LEGO sets in my youth to building custom PCs as an adult and jailbreaking my iPhone to install custom themes to solving just about any tech issue with my friends and family, I've used my creativity and knowledge of technology in my spare time. Now I've taken this passion and worked to build it into a career. My career in web development.`;
 aboutContainer.appendChild(aboutMePara2);
 
 let aboutMePara3 = document.createElement('p');
 aboutMePara3.classList.add('about-me-para');
-aboutMePara3.innerHTML = `Since 2022, I've been taking the online front-end web dev bootcamp known as The Odin Project. I've been able to put to use a wide variety of languages, enviromments, and programs to create a variety of experiences, projects, and webpages. My creativity and problem solving skills are shown throughout the projects section below <i><small>(go on... scroll down. I'll still be here when you get back)</small></i> and on this page itself. I hope you check them out.`;
+aboutMePara3.innerHTML = `Since late 2022, I've been taking an online full-stack web dev bootcamp known as The Odin Project. I've been able to put to use a wide variety of languages, enviromments, and programs to create a variety of experiences, projects, and webpages. My creativity and problem solving skills are shown throughout the projects section below <i><small>(go on, click the projects button or scroll down. I'll still be here when you get back)</small></i> and on this page itself. I hope you give them a look and have some fun playing around!`;
 aboutContainer.appendChild(aboutMePara3);
 
 //list of skills graphics

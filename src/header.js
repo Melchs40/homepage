@@ -25,7 +25,7 @@ home.innerHTML = 'Home';
 
 let aboutMe = document.createElement('button');
 aboutMe.classList.add('nav-link');
-aboutMe.innerHTML = 'About Me';
+aboutMe.innerHTML = 'About';
 
 let projects = document.createElement('button');
 projects.classList.add('nav-link');
