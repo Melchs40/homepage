@@ -31,9 +31,9 @@ let projects = document.createElement('button');
 projects.classList.add('nav-link');
 projects.innerHTML = 'Projects';
 
-let resume = document.createElement('button');
-resume.classList.add('nav-link');
-resume.innerHTML = 'Resume';
+// let resume = document.createElement('button');
+// resume.classList.add('nav-link');
+// resume.innerHTML = 'Resume';
 
 let contact = document.createElement('button');
 contact.classList.add('nav-link');
@@ -45,5 +45,5 @@ logoContainer.appendChild(logo);
 links.appendChild(home);
 links.appendChild(aboutMe);
 links.appendChild(projects);
-links.appendChild(resume);
+// links.appendChild(resume);
 links.appendChild(contact);

@@ -24,7 +24,7 @@ aboutContainer.appendChild(aboutMePara2);
 
 let aboutMePara3 = document.createElement('p');
 aboutMePara3.classList.add('about-me-para');
-aboutMePara3.innerHTML = `Since late 2022, I've been taking an online full-stack web dev bootcamp known as The Odin Project. I've been able to put to use a wide variety of languages, enviromments, and programs to create a variety of experiences, projects, and webpages. My creativity and problem solving skills are shown throughout the projects section below <i><small>(go on, click the projects button or scroll down. I'll still be here when you get back)</small></i> and on this page itself. I hope you give them a look and have some fun playing around!`;
+aboutMePara3.innerHTML = `I graduated with high honors and earned a Bachelors Degree in Geography in 2014 and had worked for the United States Postal Service for roughly six years after that, but it didn't feel like my career path was where I wanted it to be. Since late 2022, I've been taking an online full-stack web dev bootcamp known as The Odin Project. I've been able to put to use a wide variety of languages, enviromments, and programs to create a variety of experiences, projects, and webpages. My creativity and problem solving skills are shown throughout the projects section below <i><small>(go on, click the projects button or scroll down. I'll still be here when you get back)</small></i> and on this page itself. I hope you give them a look and have some fun playing around!`;
 aboutContainer.appendChild(aboutMePara3);
 
 //list of skills graphics
