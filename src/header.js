@@ -1,3 +1,7 @@
+import { aboutMeTitle } from './about';
+import { contactTitle } from './contact';
+import { projectsTitle } from './projects';
+
 export let header = document.createElement('header');
 header.setAttribute('id', 'nav-container');
 
@@ -23,13 +27,42 @@ let home = document.createElement('button');
 home.classList.add('nav-link');
 home.innerHTML = 'Home';
 
+home.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
 let aboutMe = document.createElement('button');
 aboutMe.classList.add('nav-link');
 aboutMe.innerHTML = 'About';
 
+aboutMe.addEventListener('click', function () {
+  let headerOffset = 80;
+  let elementPosition = aboutMeTitle.getBoundingClientRect().top;
+  let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
+  });
+});
+
 let projects = document.createElement('button');
 projects.classList.add('nav-link');
 projects.innerHTML = 'Projects';
+
+projects.addEventListener('click', function () {
+  let headerOffset = 80;
+  let elementPosition = projectsTitle.getBoundingClientRect().top;
+  let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
+  });
+});
 
 // let resume = document.createElement('button');
 // resume.classList.add('nav-link');
@@ -38,6 +71,17 @@ projects.innerHTML = 'Projects';
 let contact = document.createElement('button');
 contact.classList.add('nav-link');
 contact.innerHTML = 'Contact';
+
+contact.addEventListener('click', function () {
+  let headerOffset = 80;
+  let elementPosition = contactTitle.getBoundingClientRect().top;
+  let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
+  });
+});
 
 header.appendChild(logoContainer);
 header.appendChild(links);

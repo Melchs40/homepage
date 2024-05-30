@@ -5,7 +5,7 @@ let aboutContainer = document.createElement('div');
 aboutContainer.setAttribute('id', 'about-container');
 about.appendChild(aboutContainer);
 
-let aboutMeTitle = document.createElement('h1');
+export let aboutMeTitle = document.createElement('h1');
 aboutMeTitle.classList.add('about-me-title');
 aboutMeTitle.innerHTML = 'About Me.';
 aboutContainer.appendChild(aboutMeTitle);

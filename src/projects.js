@@ -5,7 +5,7 @@ let projectsContainer = document.createElement('div');
 projectsContainer.setAttribute('id', 'projects-container');
 projects.appendChild(projectsContainer);
 
-let projectsTitle = document.createElement('h1');
+export let projectsTitle = document.createElement('h1');
 projectsTitle.classList.add('projects-title');
 projectsTitle.innerHTML = 'Projects.';
 projectsContainer.appendChild(projectsTitle);
@@ -31,7 +31,7 @@ battleshipContainer.appendChild(battleshipTitle);
 let battleshipPara = document.createElement('p');
 battleshipPara.classList.add('project-para-odd');
 battleshipPara.innerHTML =
-  'This project allows for the user to play the classic boardgame against a smart AI opponent. It features additional animation in the form of a persistant radar background and a variety of responses for hits, misses, sinking of ships, wins, and losses. ';
+  'This project allows for the user to play the classic boardgame against a smart AI opponent. Players can select where to place It features additional animation in the form of a persistant radar background and a variety of responses for hits, misses, sinking of ships, wins, and losses. ';
 battleshipContainer.appendChild(battleshipPara);
 
 let battleshipSource = document.createElement('a');
@@ -83,7 +83,7 @@ weatherAppContainer.appendChild(weatherAppTitle);
 let weatherappPara = document.createElement('p');
 weatherappPara.classList.add('project-para-even');
 weatherappPara.innerHTML =
-  'This project allows for the user to play the classic boardgame against a smart AI opponent. It features additional animation in the form of a persistant radar background and a variety of responses for hits, misses, sinking of ships, wins, and losses. ';
+  'QuickWeather is a project that accesses Weather API through fetch requests to show the user the current conditions as well as future conditions for the next two days. An easy to use application designed with minimal bells and whistles to get users the weather they want quickly. The only animation that occurs is a shuffle when the page is loading the weather of a new city.';
 weatherAppContainer.appendChild(weatherappPara);
 
 let weatherAppSource = document.createElement('a');
@@ -103,7 +103,7 @@ weatherAppContainer.appendChild(weatherAppLive);
 let weatherAppTech = document.createElement('p');
 weatherAppTech.classList.add('project-tech-even');
 weatherAppTech.innerHTML =
-  '<b>Tech Stack:</b> HTML, CSS, SASS, Javascript, npm, Jest, Webpack.';
+  '<b>Tech Stack:</b> HTML, CSS, SASS, Javascript, npm, Webpack, WeatherAPI.';
 weatherAppContainer.appendChild(weatherAppTech);
 
 let weatherAppImCon = document.createElement('div');
@@ -239,7 +239,7 @@ libraryContainer.appendChild(libraryTitle);
 let libraryPara = document.createElement('p');
 libraryPara.classList.add('project-para-odd');
 libraryPara.innerHTML =
-  'This project allows for the user to play the classic boardgame against a smart AI opponent. It features additional animation in the form of a persistant radar background and a variety of responses for hits, misses, sinking of ships, wins, and losses. ';
+  "My Book Library is an application that allows for users to add both books they have read and ones they haven't. It features a basic form for adding the author's name, the title of the book, whether or not they have read the book, and a rating slide bar from 1-5. The book name is the only required input and the author will default to unknown when the user has left that field blank. The read/not read status can be changed after the fact. A modal box will be enabled that alerts the user to rate the book when changed to read and the rating automatically be removed when not read is chosen.";
 libraryContainer.appendChild(libraryPara);
 
 let librarySource = document.createElement('a');
@@ -258,8 +258,7 @@ libraryContainer.appendChild(libraryLive);
 
 let libraryTech = document.createElement('p');
 libraryTech.classList.add('project-tech-odd');
-libraryTech.innerHTML =
-  '<b>Tech Stack:</b> HTML, CSS, SASS, Javascript, npm, Jest, Webpack.';
+libraryTech.innerHTML = '<b>Tech Stack:</b> HTML, CSS, Javascript.';
 libraryContainer.appendChild(libraryTech);
 
 let libraryImCon = document.createElement('div');

@@ -275,7 +275,7 @@ body {
 .project-container-odd {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 1fr 2fr 2rem 2rem;
+  grid-template-rows: 5rem 1fr 2rem 2rem;
   padding: 3rem 6rem;
   gap: 1rem;
 }
@@ -283,7 +283,7 @@ body {
 .project-container-even {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 5rem 1fr 2rem 2rem;
   padding: 3rem 6rem;
   gap: 1rem;
 }
@@ -292,12 +292,15 @@ body {
   grid-area: 1/1/2/3;
   justify-self: center;
   font-size: 2rem;
+  text-wrap: nowrap;
 }
 
 .project-title-even {
   grid-area: 1/2/2/4;
   justify-self: center;
   font-size: 2rem;
+  text-wrap: nowrap;
+  padding-top: none;
 }
 
 .project-para-odd {
@@ -454,15 +457,56 @@ body {
   font-size: 1rem;
 }
 
-#contact-form-container {
+#contact-content-container {
   margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+
+#contact-links-container {
+  display: grid;
+  padding-top: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 6rem);
+}
+
+.contact-button {
+  height: 3rem;
+  width: auto;
+}
+
+#linkedin-button {
+  grid-area: 1/1/2/2;
+}
+
+#linkedin-button-background {
+  display: block;
+  grid-area: 1/1/2/2;
+  margin-left: 3rem;
+  height: 3rem;
+  width: 0rem;
+  opacity: 0;
+  text-wrap: nowrap;
+  background-color: none;
+  transition: width 2s, opacity 2s, padding-left 2s, background-color 2s;
+}
+
+#linkedin-button:hover + #linkedin-button-background {
+  background-color: blue;
+  color: white;
+  opacity: 1;
+  padding-left: 3rem;
+  width: calc(80% - 2rem);
+  transition: width 2s, opacity 2s, padding-left 2s, background-color 2s;
+}
+
+#contact-form-container {
   position: relative;
-  left: 50%;
 }
 
 #contact-form {
   margin-bottom: 10rem;
-  width: 50%;
 }
 
 .contact-items-container {
@@ -486,6 +530,7 @@ body {
   appearance: none;
   height: 10rem;
   resize: none;
+  font-family: 'Ubuntu Sans', sans-serif;
 }
 
 #contact-submit {

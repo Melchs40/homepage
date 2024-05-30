@@ -9,7 +9,7 @@ let contactBackground = document.createElement('div');
 contactBackground.setAttribute('id', 'contact-background');
 contact.appendChild(contactBackground);
 
-let contactTitle = document.createElement('h1');
+export let contactTitle = document.createElement('h1');
 contactTitle.classList.add('contact-title');
 contactTitle.innerHTML = 'Contact.';
 contactContainer.appendChild(contactTitle);
@@ -20,9 +20,53 @@ contactPara.innerHTML =
   "There are a few ways to get ahold of me, from LinkedIn to good old fashioned email to the handy contact form just below here. I've even included a PDF of my résumé for a more intensive viewing of my background. Feel free to reach out with any comments, concerns, compliments, or complaints. If you think we could have a mutually beneficial relationship in the world of web design, I'd love to hear from you!";
 contactContainer.appendChild(contactPara);
 
+let contactContent = document.createElement('div');
+contactContent.setAttribute('id', 'contact-content-container');
+contactContainer.appendChild(contactContent);
+
+let linksContainer = document.createElement('div');
+linksContainer.setAttribute('id', 'contact-links-container');
+contactContent.appendChild(linksContainer);
+
+let linkedInButton = document.createElement('img');
+linkedInButton.setAttribute('id', 'linkedin-button');
+linkedInButton.classList.add('contact-button');
+linkedInButton.src =
+  'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg';
+linkedInButton.alt = 'Git Hub Logo Link';
+linksContainer.appendChild(linkedInButton);
+
+let linkedInBackground = document.createElement('div');
+linkedInBackground.setAttribute('id', 'linkedin-button-background');
+linkedInBackground.classList.add('contact-button-background');
+linkedInBackground.innerHTML = 'Sam';
+linksContainer.appendChild(linkedInBackground);
+
+let githubButton = document.createElement('img');
+githubButton.setAttribute('id', 'github-button');
+githubButton.classList.add('contact-button');
+githubButton.src =
+  'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg';
+githubButton.alt = 'Git Hub Logo Link';
+linksContainer.appendChild(githubButton);
+
+let emailButton = document.createElement('img');
+emailButton.setAttribute('id', 'email-button');
+emailButton.classList.add('contact-button');
+emailButton.src = '../images/reshot-icon-email-message-QZWBGHKULS.svg';
+emailButton.alt = 'Email Link';
+linksContainer.appendChild(emailButton);
+
+let pdfButton = document.createElement('img');
+pdfButton.setAttribute('id', 'pdf-button');
+pdfButton.classList.add('contact-button');
+pdfButton.src = '../images/reshot-icon-pdf-file-8W7GJ5ZKQP.svg';
+pdfButton.alt = 'PDF Link';
+linksContainer.appendChild(pdfButton);
+
 let contactFormContainer = document.createElement('div');
 contactFormContainer.setAttribute('id', 'contact-form-container');
-contactContainer.appendChild(contactFormContainer);
+contactContent.appendChild(contactFormContainer);
 
 let contactForm = document.createElement('form');
 contactForm.setAttribute('id', 'contact-form');
