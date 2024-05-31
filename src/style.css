@@ -448,25 +448,82 @@ body {
   grid-area: 1/1/2/2;
 }
 
-#linkedin-button-background {
-  display: block;
-  grid-area: 1/1/2/2;
-  margin-left: 3rem;
+#github-button {
+  grid-area: 2/1/3/2;
+}
+
+#email-button {
+  grid-area: 3/1/4/2;
+}
+
+#pdf-button {
+  grid-area: 4/1/5/2;
+}
+
+.contact-button-background {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3.5rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   height: 3rem;
   width: 0rem;
-  opacity: 0;
+  opacity: 1;
+  color: white;
+  visibility: hidden;
   text-wrap: nowrap;
   background-color: none;
-  transition: width 2s, opacity 2s, padding-left 2s, background-color 2s;
+  padding-left: 1rem;
+  transition: width 2s, opacity 2s, background-color 2s, visibility 2s;
+}
+
+#linkedin-button-background {
+  grid-area: 1/1/2/2;
+}
+
+#github-button-background {
+  grid-area: 2/1/3/2;
+}
+
+#email-button-background {
+  grid-area: 3/1/4/2;
+}
+
+#pdf-button-background {
+  grid-area: 4/1/5/2;
 }
 
 #linkedin-button:hover + #linkedin-button-background {
-  background-color: blue;
-  color: white;
+  background-color: black;
   opacity: 1;
-  padding-left: 3rem;
-  width: calc(80% - 2rem);
-  transition: width 2s, opacity 2s, padding-left 2s, background-color 2s;
+  width: 60%;
+  visibility: visible;
+  transition: width 2s, opacity 2s, background-color 2s;
+}
+
+#github-button:hover + #github-button-background {
+  background-color: black;
+  opacity: 1;
+  width: 60%;
+  visibility: visible;
+  transition: width 2s, opacity 2s, background-color 2s;
+}
+
+#email-button:hover + #email-button-background {
+  background-color: black;
+  opacity: 1;
+  width: 60%;
+  visibility: visible;
+  transition: width 2s, opacity 2s, background-color 2s;
+}
+
+#pdf-button:hover + #pdf-button-background {
+  background-color: black;
+  opacity: 1;
+  width: 60%;
+  visibility: visible;
+  transition: width 2s, opacity 2s, background-color 2s;
 }
 
 #contact-form-container {

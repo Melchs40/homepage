@@ -33,13 +33,13 @@ linkedInButton.setAttribute('id', 'linkedin-button');
 linkedInButton.classList.add('contact-button');
 linkedInButton.src =
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg';
-linkedInButton.alt = 'Git Hub Logo Link';
+linkedInButton.alt = 'LinkedIn Logo Link';
 linksContainer.appendChild(linkedInButton);
 
 let linkedInBackground = document.createElement('div');
 linkedInBackground.setAttribute('id', 'linkedin-button-background');
 linkedInBackground.classList.add('contact-button-background');
-linkedInBackground.innerHTML = 'Sam';
+linkedInBackground.innerHTML = 'Check me out on LinkedIn.';
 linksContainer.appendChild(linkedInBackground);
 
 let githubButton = document.createElement('img');
@@ -50,6 +50,12 @@ githubButton.src =
 githubButton.alt = 'Git Hub Logo Link';
 linksContainer.appendChild(githubButton);
 
+let githubBackground = document.createElement('div');
+githubBackground.setAttribute('id', 'github-button-background');
+githubBackground.classList.add('contact-button-background');
+githubBackground.innerHTML = "Here's my GitHub profile.";
+linksContainer.appendChild(githubBackground);
+
 let emailButton = document.createElement('img');
 emailButton.setAttribute('id', 'email-button');
 emailButton.classList.add('contact-button');
@@ -57,12 +63,24 @@ emailButton.src = '../images/reshot-icon-email-message-QZWBGHKULS.svg';
 emailButton.alt = 'Email Link';
 linksContainer.appendChild(emailButton);
 
+let emailBackground = document.createElement('div');
+emailBackground.setAttribute('id', 'email-button-background');
+emailBackground.classList.add('contact-button-background');
+emailBackground.innerHTML = "If you'd prefer to reach out via email.";
+linksContainer.appendChild(emailBackground);
+
 let pdfButton = document.createElement('img');
 pdfButton.setAttribute('id', 'pdf-button');
 pdfButton.classList.add('contact-button');
 pdfButton.src = '../images/reshot-icon-pdf-file-8W7GJ5ZKQP.svg';
 pdfButton.alt = 'PDF Link';
 linksContainer.appendChild(pdfButton);
+
+let pdfBackground = document.createElement('div');
+pdfBackground.setAttribute('id', 'pdf-button-background');
+pdfBackground.classList.add('contact-button-background');
+pdfBackground.innerHTML = 'Take a look at my résumé.';
+linksContainer.appendChild(pdfBackground);
 
 let contactFormContainer = document.createElement('div');
 contactFormContainer.setAttribute('id', 'contact-form-container');
