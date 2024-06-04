@@ -5,6 +5,10 @@ body {
   font-family: "Ubuntu Sans", sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 #content {
   height: auto;
   background-color: white;
@@ -58,6 +62,10 @@ body {
   margin-left: 1rem;
 }
 
+#logo:hover {
+  cursor: help;
+}
+
 .roll {
   height: 3rem;
   width: auto;
@@ -95,8 +103,8 @@ body {
 #me-container {
   background-color: white;
   display: grid;
-  grid-template-rows: 8rem repeat(4, 6rem) 8rem;
-  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-rows: 8rem repeat(4, 7rem) 8rem;
+  grid-template-columns: 1fr 1fr 5fr;
   padding-bottom: 3rem;
   border-bottom: 1px solid black;
 }
@@ -106,7 +114,7 @@ body {
 }
 
 #me-background-image {
-  height: 100%;
+  height: 90%;
   width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
@@ -118,7 +126,7 @@ body {
   grid-area: 2/1/3/4;
   padding-left: 5%;
   margin: 0;
-  font-size: 15vmin;
+  font-size: 7rem;
   letter-spacing: 0.5rem;
   -webkit-text-stroke: 2px white;
   color: black;
@@ -132,7 +140,7 @@ body {
 #last-name {
   grid-area: 3/1/4/4;
   padding-left: 10%;
-  font-size: 15vmin;
+  font-size: 7rem;
   margin: 0;
   letter-spacing: 0.5rem;
   -webkit-text-stroke: 2px white;
@@ -147,7 +155,7 @@ body {
 #first-title {
   grid-area: 4/1/5/4;
   padding-left: 15%;
-  font-size: 15vmin;
+  font-size: 7rem;
   margin: 0;
   letter-spacing: 0.5rem;
   -webkit-text-stroke: 2px white;
@@ -162,7 +170,7 @@ body {
 #last-title {
   grid-area: 5/1/6/4;
   padding-left: 20%;
-  font-size: 15vmin;
+  font-size: 7rem;
   margin: 0;
   letter-spacing: 0.5rem;
   -webkit-text-stroke: 2px white;
@@ -367,6 +375,7 @@ body {
   height: 230px;
   width: 460px;
   align-self: center;
+  justify-self: center;
   border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 4px 8px 0px inset;
 }
@@ -376,6 +385,7 @@ body {
   height: 230px;
   width: 460px;
   align-self: center;
+  justify-self: center;
   border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 4px 8px 0px inset;
 }
@@ -444,6 +454,10 @@ body {
   width: auto;
 }
 
+.contact-button:hover {
+  cursor: pointer;
+}
+
 #linkedin-button {
   grid-area: 1/1/2/2;
 }
@@ -473,9 +487,9 @@ body {
   color: white;
   visibility: hidden;
   text-wrap: nowrap;
-  background-color: none;
+  background-color: white;
   padding-left: 1rem;
-  transition: width 2s, opacity 2s, background-color 2s, visibility 2s;
+  transition: width 2s, opacity 1s, background-color 2s, visibility 2s;
 }
 
 #linkedin-button-background {
@@ -499,7 +513,7 @@ body {
   opacity: 1;
   width: 60%;
   visibility: visible;
-  transition: width 2s, opacity 2s, background-color 2s;
+  transition: width 2s, opacity 1s, background-color 2s;
 }
 
 #github-button:hover + #github-button-background {
@@ -507,7 +521,7 @@ body {
   opacity: 1;
   width: 60%;
   visibility: visible;
-  transition: width 2s, opacity 2s, background-color 2s;
+  transition: width 2s, opacity 1s, background-color 2s;
 }
 
 #email-button:hover + #email-button-background {
@@ -515,7 +529,7 @@ body {
   opacity: 1;
   width: 60%;
   visibility: visible;
-  transition: width 2s, opacity 2s, background-color 2s;
+  transition: width 2s, opacity 1s, background-color 2s;
 }
 
 #pdf-button:hover + #pdf-button-background {
@@ -523,7 +537,7 @@ body {
   opacity: 1;
   width: 60%;
   visibility: visible;
-  transition: width 2s, opacity 2s, background-color 2s;
+  transition: width 2s, opacity 1s, background-color 2s;
 }
 
 #contact-form-container {
@@ -531,7 +545,7 @@ body {
 }
 
 #contact-form {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .contact-items-container {
@@ -568,9 +582,11 @@ body {
   margin-top: 9rem;
 }
 
-#test-child3 {
-  height: 400px;
-  width: 100%;
-  background-color: lightgreen;
-  padding-top: 6rem;
+#footer {
+  border-top: 3px solid black;
+  height: 2rem;
+  padding-top: 1rem;
+  margin: auto 0;
+  justify-content: center;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

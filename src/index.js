@@ -15,4 +15,9 @@ content.appendChild(me);
 content.appendChild(about);
 content.appendChild(projects);
 content.appendChild(contact);
-content.appendChild(testChild3);
+// content.appendChild(testChild3);
+
+let footer = document.createElement('footer');
+footer.setAttribute('id', 'footer');
+footer.innerHTML = 'Copyright © 2024 | Samuel Melchior Web Development ';
+content.appendChild(footer);
