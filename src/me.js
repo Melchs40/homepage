@@ -1,3 +1,5 @@
+import Background from '../images/pexels-teddy-2168238.jpg';
+
 export let me = document.createElement('div');
 me.setAttribute('id', 'me-container');
 
@@ -6,7 +8,7 @@ meBackground.setAttribute('id', 'me-background');
 
 let meBackgroundImage = document.createElement('img');
 meBackgroundImage.setAttribute('id', 'me-background-image');
-meBackgroundImage.src = '../images/pexels-teddy-2168238.jpg';
+meBackgroundImage.src = Background;
 
 let firstName = document.createElement('h1');
 firstName.classList.add('main-text');

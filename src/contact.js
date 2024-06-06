@@ -1,3 +1,6 @@
+import Email from '../images/reshot-icon-email-message-QZWBGHKULS.svg';
+import PDFImage from '../images/reshot-icon-pdf-file-8W7GJ5ZKQP.svg';
+
 export let contact = document.createElement('div');
 contact.setAttribute('id', 'contact-section');
 
@@ -70,7 +73,7 @@ linksContainer.appendChild(githubBackground);
 let emailButton = document.createElement('img');
 emailButton.setAttribute('id', 'email-button');
 emailButton.classList.add('contact-button');
-emailButton.src = '../images/reshot-icon-email-message-QZWBGHKULS.svg';
+emailButton.src = Email;
 emailButton.alt = 'Email Link';
 emailButton.tabIndex = 0;
 emailButton.addEventListener('click', function () {
@@ -87,7 +90,7 @@ linksContainer.appendChild(emailBackground);
 let pdfButton = document.createElement('img');
 pdfButton.setAttribute('id', 'pdf-button');
 pdfButton.classList.add('contact-button');
-pdfButton.src = '../images/reshot-icon-pdf-file-8W7GJ5ZKQP.svg';
+pdfButton.src = PDFImage;
 pdfButton.alt = 'PDF Link';
 pdfButton.tabIndex = 0;
 pdfButton.addEventListener('click', function () {

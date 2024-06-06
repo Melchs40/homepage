@@ -1,3 +1,9 @@
+import Battleship from '../images/Battleship-Image.png';
+import Weather from '../images/Weather-App-Image.png';
+import ToDo from '../images/Todo-Image.png';
+import Restaurant from '../images/Restaurant-Page-Image.png';
+import Library from '../images/Library-Image.png';
+
 export let projects = document.createElement('div');
 projects.setAttribute('id', 'projects');
 
@@ -61,7 +67,7 @@ battleshipContainer.appendChild(battleshipImCon);
 let battleshipImage = document.createElement('img');
 battleshipImage.setAttribute('id', 'battleship-image');
 battleshipImage.classList.add('project-image-odd');
-battleshipImage.src = '../images/Battleship-Image.png';
+battleshipImage.src = Battleship;
 battleshipImCon.appendChild(battleshipImage);
 
 let battleshipBorder = document.createElement('div');
@@ -113,7 +119,7 @@ weatherAppContainer.appendChild(weatherAppImCon);
 let weatherAppImage = document.createElement('img');
 weatherAppImage.setAttribute('id', 'weather-app-image');
 weatherAppImage.classList.add('project-image-even');
-weatherAppImage.src = '../images/Weather-App-Image.png';
+weatherAppImage.src = Weather;
 weatherAppImCon.appendChild(weatherAppImage);
 
 let weatherAppBorder = document.createElement('div');
@@ -165,7 +171,7 @@ todoContainer.appendChild(todoImCon);
 let todoImage = document.createElement('img');
 todoImage.setAttribute('id', 'todo-image');
 todoImage.classList.add('project-image-odd');
-todoImage.src = '../images/Todo-Image.png';
+todoImage.src = ToDo;
 todoImCon.appendChild(todoImage);
 
 let todoBorder = document.createElement('div');
@@ -217,7 +223,7 @@ restaurantContainer.appendChild(restaurantImCon);
 let restaurantImage = document.createElement('img');
 restaurantImage.setAttribute('id', 'restaurant-page-image');
 restaurantImage.classList.add('project-image-even');
-restaurantImage.src = '../images/Restaurant-Page-Image.png';
+restaurantImage.src = Restaurant;
 restaurantImCon.appendChild(restaurantImage);
 
 let restaurantBorder = document.createElement('div');
@@ -268,5 +274,5 @@ libraryContainer.appendChild(libraryImCon);
 let libraryImage = document.createElement('img');
 libraryImage.setAttribute('id', 'library-image');
 libraryImage.classList.add('project-image-odd');
-libraryImage.src = '../images/LibraryImage.png';
+libraryImage.src = Library;
 libraryImCon.appendChild(libraryImage);

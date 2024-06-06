@@ -1,3 +1,4 @@
+import Logo from '../images/Tuxedo38 Logo Black Background No Border.png';
 import { aboutMeTitle } from './about';
 import { contactTitle } from './contact';
 import { projectsTitle } from './projects';
@@ -10,7 +11,7 @@ logoContainer.setAttribute('id', 'logo-container');
 
 let logo = document.createElement('img');
 logo.setAttribute('id', 'logo');
-logo.src = '../images/Tuxedo38 Logo Black Background No Border.png';
+logo.src = Logo;
 logo.alt = 'My logo';
 
 logo.addEventListener('click', () => {
