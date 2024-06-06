@@ -91,3 +91,130 @@ links.appendChild(aboutMe);
 links.appendChild(projects);
 // links.appendChild(resume);
 links.appendChild(contact);
+
+//mobile nav
+
+let mobileButton = document.createElement('button');
+mobileButton.setAttribute('id', 'mobile-nav-button');
+mobileButton.classList.add('mobile');
+mobileButton.classList.add('material-symbols-outlined');
+mobileButton.innerHTML = 'menu';
+mobileButton.style.backgroundColor = 'transparent';
+links.appendChild(mobileButton);
+
+mobileButton.addEventListener('click', function () {
+  //   links.classList.toggle('clicked');
+  mobileButton.classList.toggle('clicked');
+  mobileContainer.classList.toggle('active');
+  mobileHome.classList.toggle('active');
+  mobileAbout.classList.toggle('active');
+  mobileProjects.classList.toggle('active');
+  mobileContact.classList.toggle('active');
+  //   let mobileStuff = document.querySelectorAll('.mobile');
+  //   for (let i = 0; i < mobileStuff.length; i++) {
+  //     if (mobileStuff[i].style.display == 'none') {
+  //       mobileStuff[i].style.display == 'block';
+  //     } else mobileStuff[i].style.display == 'none';
+  //   }
+});
+
+let mobileContainer = document.createElement('div');
+mobileContainer.setAttribute('id', 'mobile-nav-container');
+mobileContainer.classList.add('mobile');
+links.appendChild(mobileContainer);
+
+let mobileHome = document.createElement('button');
+mobileHome.setAttribute('id', 'mobile-home-button');
+mobileHome.classList.add('mobile-buttons');
+mobileHome.classList.add('mobile');
+mobileHome.innerHTML = 'Home';
+mobileContainer.appendChild(mobileHome);
+
+mobileHome.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+  //   links.classList.toggle('clicked');
+  mobileButton.classList.toggle('clicked');
+  mobileContainer.classList.toggle('active');
+  mobileHome.classList.toggle('active');
+  mobileAbout.classList.toggle('active');
+  mobileProjects.classList.toggle('active');
+  mobileContact.classList.toggle('active');
+});
+
+let mobileAbout = document.createElement('button');
+mobileAbout.setAttribute('id', 'mobile-about-button');
+mobileAbout.classList.add('mobile-buttons');
+mobileAbout.classList.add('mobile');
+mobileAbout.innerHTML = 'About';
+mobileContainer.appendChild(mobileAbout);
+
+mobileAbout.addEventListener('click', function () {
+  let headerOffset = 80;
+  let elementPosition = aboutMeTitle.getBoundingClientRect().top;
+  let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
+  });
+  //   links.classList.toggle('clicked');
+  mobileButton.classList.toggle('clicked');
+  mobileContainer.classList.toggle('active');
+  mobileHome.classList.toggle('active');
+  mobileAbout.classList.toggle('active');
+  mobileProjects.classList.toggle('active');
+  mobileContact.classList.toggle('active');
+});
+
+let mobileProjects = document.createElement('button');
+mobileProjects.setAttribute('id', 'mobile-projects-button');
+mobileProjects.classList.add('mobile-buttons');
+mobileProjects.classList.add('mobile');
+mobileProjects.innerHTML = 'Projects';
+mobileContainer.appendChild(mobileProjects);
+
+mobileProjects.addEventListener('click', function () {
+  let headerOffset = 80;
+  let elementPosition = projectsTitle.getBoundingClientRect().top;
+  let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
+  });
+  //   links.classList.toggle('clicked');
+  mobileButton.classList.toggle('clicked');
+  mobileContainer.classList.toggle('active');
+  mobileHome.classList.toggle('active');
+  mobileAbout.classList.toggle('active');
+  mobileProjects.classList.toggle('active');
+  mobileContact.classList.toggle('active');
+});
+
+let mobileContact = document.createElement('button');
+mobileContact.setAttribute('id', 'mobile-contact-button');
+mobileContact.classList.add('mobile-buttons');
+mobileContact.classList.add('mobile');
+mobileContact.innerHTML = 'Contact';
+mobileContainer.appendChild(mobileContact);
+
+mobileContact.addEventListener('click', function () {
+  let headerOffset = 80;
+  let elementPosition = contactTitle.getBoundingClientRect().top;
+  let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
+  });
+  //   links.classList.toggle('clicked');
+  mobileButton.classList.toggle('clicked');
+  mobileContainer.classList.toggle('active');
+  mobileHome.classList.toggle('active');
+  mobileAbout.classList.toggle('active');
+  mobileProjects.classList.toggle('active');
+  mobileContact.classList.toggle('active');
+});

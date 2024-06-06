@@ -7,15 +7,11 @@ import { contact } from './contact';
 
 let content = document.getElementById('content');
 
-let testChild3 = document.createElement('div');
-testChild3.setAttribute('id', 'test-child3');
-
 content.appendChild(header);
 content.appendChild(me);
 content.appendChild(about);
 content.appendChild(projects);
 content.appendChild(contact);
-// content.appendChild(testChild3);
 
 let footer = document.createElement('footer');
 footer.setAttribute('id', 'footer');

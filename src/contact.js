@@ -170,3 +170,11 @@ contactSubmit.setAttribute('id', 'contact-submit');
 contactSubmit.type = 'submit';
 contactSubmit.textContent = 'Send it my way';
 contactForm.appendChild(contactSubmit);
+
+contactSubmit.addEventListener('mouseover', function () {
+  contactSubmit.textContent = 'Go on, send it';
+});
+
+contactSubmit.addEventListener('mouseout', function () {
+  contactSubmit.textContent = 'Send it my way';
+});

@@ -31,7 +31,7 @@ battleshipContainer.appendChild(battleshipTitle);
 let battleshipPara = document.createElement('p');
 battleshipPara.classList.add('project-para-odd');
 battleshipPara.innerHTML =
-  'This project allows for the user to play the classic boardgame against a smart AI opponent. Players can select where to place It features additional animation in the form of a persistant radar background and a variety of responses for hits, misses, sinking of ships, wins, and losses. ';
+  'This project allows for the user to play the classic boardgame against a smart AI opponent. Players can select where to place their ships on the board and click wherever on the AI board to attack. It features additional animation in the form of a persistant radar background and a variety of responses for hits, misses, sinking of ships, wins, and losses. Additionally, a mobile version of the webpage was created that eliminates most animation and allows for a better user experience on smaller devices.';
 battleshipContainer.appendChild(battleshipPara);
 
 let battleshipSource = document.createElement('a');
@@ -135,7 +135,7 @@ todoContainer.appendChild(todoTitle);
 let todoPara = document.createElement('p');
 todoPara.classList.add('project-para-odd');
 todoPara.innerHTML =
-  'This project allows for the user to play the classic boardgame against a smart AI opponent. It features additional animation in the form of a persistant radar background and a variety of responses for hits, misses, sinking of ships, wins, and losses. ';
+  'The To-Do List lets the user create lists for specific projects and then add in individual items. When adding to-dos to a project, one can add in the title, a more detailed description, a due date, and whether or it is important. After being added it can be edited or discarded and can be marked as completed which will gray it out. The user can also sort to-do items regardless of project by all tasks, if an item is due that day or that week, and if it is marked as important. All items are stored locally within each individual web browser.';
 todoContainer.appendChild(todoPara);
 
 let todoSource = document.createElement('a');
@@ -187,7 +187,7 @@ restaurantContainer.appendChild(restaurantTitle);
 let restaurantPara = document.createElement('p');
 restaurantPara.classList.add('project-para-even');
 restaurantPara.innerHTML =
-  'This project allows for the user to play the classic boardgame against a smart AI opponent. It features additional animation in the form of a persistant radar background and a variety of responses for hits, misses, sinking of ships, wins, and losses. ';
+  'This project is a business webpage with different pages built within it. There is a main introductory splash page featuring information about the business as well as the company logo. Different modules were created for additional pages with buttons for them in the nav bar. These buttons include links to new pages which are for their products and specials, an events page, a contact us form (disabled on this example page), and one button that brings the user back to the home page.';
 restaurantContainer.appendChild(restaurantPara);
 
 let restaurantSource = document.createElement('a');
