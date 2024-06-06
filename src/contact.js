@@ -1,5 +1,6 @@
 import Email from '../images/reshot-icon-email-message-QZWBGHKULS.svg';
 import PDFImage from '../images/reshot-icon-pdf-file-8W7GJ5ZKQP.svg';
+import myPDF from '../images/Samuel C Melchior Resume.pdf';
 
 export let contact = document.createElement('div');
 contact.setAttribute('id', 'contact-section');
@@ -94,7 +95,7 @@ pdfButton.src = PDFImage;
 pdfButton.alt = 'PDF Link';
 pdfButton.tabIndex = 0;
 pdfButton.addEventListener('click', function () {
-  window.open('../images/Samuel-C-Melchior-Resume.pdf', '_blank');
+  window.open(myPDF, '_blank');
 });
 linksContainer.appendChild(pdfButton);
 

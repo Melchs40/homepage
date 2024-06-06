@@ -1,4 +1,4 @@
-import Background from './images/pexels-teddy-2168238.jpg';
+import Background from '../images/pexels-teddy-2168238.jpg';
 
 export let me = document.createElement('div');
 me.setAttribute('id', 'me-container');
