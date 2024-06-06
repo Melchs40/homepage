@@ -19,7 +19,7 @@ aboutContainer.appendChild(aboutMePara);
 
 let aboutMePara2 = document.createElement('p');
 aboutMePara2.classList.add('about-me-para');
-aboutMePara2.innerHTML = `I've always enjoyed anything related to computers and had the urge to mess around and create things myself. From building LEGO sets in my youth to building custom PCs as an adult and jailbreaking my iPhone to install custom themes to solving just about any tech issue with my friends and family, I've used my creativity and knowledge of technology in my spare time. Now I've taken this passion and worked to build it into a career. My career in web development.`;
+aboutMePara2.innerHTML = `I've always enjoyed anything related to computers and had the urge to mess around and create things myself. This could be from building LEGO sets in my youth to building custom PCs as an adult and jailbreaking my iPhone to install custom themes to solving just about any tech issue with my friends and family, I've used my creativity and knowledge of technology in my spare time. Now I've taken this passion and worked to build it into a career. My career in web development.`;
 aboutContainer.appendChild(aboutMePara2);
 
 let aboutMePara3 = document.createElement('p');
