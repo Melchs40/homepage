@@ -268,5 +268,5 @@ libraryContainer.appendChild(libraryImCon);
 let libraryImage = document.createElement('img');
 libraryImage.setAttribute('id', 'library-image');
 libraryImage.classList.add('project-image-odd');
-libraryImage.src = '../images/Library-Image.png';
+libraryImage.src = '../images/LibraryImage.png';
 libraryImCon.appendChild(libraryImage);
