@@ -43,6 +43,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: end;
+  height: 4rem;
 }
 
 .mobile {
@@ -71,6 +72,7 @@ button:hover {
 
 #logo-container {
   grid-area: 1/1/2/2;
+  height: 4rem;
 }
 
 #logo {
@@ -709,6 +711,13 @@ button:hover {
     font-size: 3rem;
     padding-left: 9%;
   }
+  .skill-container {
+    transition: none;
+  }
+  .skill-container:hover {
+    transform: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  }
   #all-skills-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
@@ -744,6 +753,14 @@ button:hover {
   .project-image-container-even,
   .project-image-container-odd {
     grid-area: 2/1/3/3;
+  }
+  .project-image-odd:hover {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .project-image-even:hover {
+    margin-top: 1rem;
+    margin-left: -1rem;
   }
   #contact-content-container {
     grid-template-columns: 1fr;
