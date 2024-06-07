@@ -583,6 +583,8 @@ button:hover {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background-color: white;
+  color: black;
   margin-left: 7rem;
   margin-top: 9rem;
   border-radius: 2rem;
