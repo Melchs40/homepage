@@ -1,6 +1,6 @@
 import Email from '../images/reshot-icon-email-message-QZWBGHKULS.svg';
-import PDFImage from '../images/reshot-icon-pdf-file-8W7GJ5ZKQP.svg';
-import myPNG from '../images/Samuel-C-Melchior-Resume.png';
+import FileImage from '../images/reshot-icon-resume-L4CTDEMPY6.svg';
+import MyPNG from '../images/Samuel-C-Melchior-Resume.png';
 
 export let contact = document.createElement('div');
 contact.setAttribute('id', 'contact-section');
@@ -91,11 +91,11 @@ linksContainer.appendChild(emailBackground);
 let pdfButton = document.createElement('img');
 pdfButton.setAttribute('id', 'pdf-button');
 pdfButton.classList.add('contact-button');
-pdfButton.src = PDFImage;
+pdfButton.src = FileImage;
 pdfButton.alt = 'PDF Link';
 pdfButton.tabIndex = 0;
 pdfButton.addEventListener('click', function () {
-  window.open(myPNG, '_blank');
+  window.open(MyPNG, '_blank');
 });
 linksContainer.appendChild(pdfButton);
 
