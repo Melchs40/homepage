@@ -1,6 +1,6 @@
 import Email from '../images/reshot-icon-email-message-QZWBGHKULS.svg';
 import PDFImage from '../images/reshot-icon-pdf-file-8W7GJ5ZKQP.svg';
-import myPDF from '../images/Samuel C Melchior Resume.pdf';
+import myPDF from '../images/Samuel-C-Melchior-Resume.pdf';
 
 export let contact = document.createElement('div');
 contact.setAttribute('id', 'contact-section');

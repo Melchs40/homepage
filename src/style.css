@@ -739,6 +739,22 @@ button:hover {
   .contact-button-background {
     background: linear-gradient(24deg, rgb(255, 255, 255) 0%, rgb(228, 224, 224) 83%, rgb(199, 195, 195) 100%);
   }
+  #linkedin-button:hover + #linkedin-button-background {
+    width: calc(100% - 6rem);
+    transition: none;
+  }
+  #github-button:hover + #github-button-background {
+    width: calc(100% - 6rem);
+    transition: none;
+  }
+  #email-button:hover + #email-button-background {
+    width: calc(100% - 6rem);
+    transition: none;
+  }
+  #pdf-button:hover + #pdf-button-background {
+    width: calc(100% - 6rem);
+    transition: none;
+  }
   #linkedin-button-background,
   #github-button-background,
   #email-button-background,
@@ -749,6 +765,9 @@ button:hover {
   }
   #contact-form {
     margin-bottom: 1rem;
+  }
+  .contact-fill-in {
+    min-width: 10rem;
   }
 }
 @media (max-width: 500px) {
