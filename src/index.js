@@ -7,7 +7,11 @@ import { contact } from './contact';
 
 let content = document.getElementById('content');
 
+let headerBackground = document.createElement('div');
+headerBackground.setAttribute('id', 'header-background');
+
 content.appendChild(header);
+content.appendChild(headerBackground);
 content.appendChild(me);
 content.appendChild(about);
 content.appendChild(projects);

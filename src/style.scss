@@ -32,10 +32,21 @@ button:hover {
   background-color: white;
   border-bottom: 3px solid black;
   padding-top: 1rem;
-  z-index: 2;
+  z-index: 3;
+}
+
+#header-background {
+  margin: 0;
+  position: fixed;
+  height: 5rem;
+  border-bottom: 3px solid white;
+  margin-left: -1rem;
+  width: 100%;
+  background-color: white;
 }
 
 #nav-link-container {
+  grid-area: 1/2/2/3;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: end;
@@ -61,6 +72,10 @@ button:hover {
   transform: scale(1.2);
   color: white;
   background-color: black;
+}
+
+#logo-container {
+  grid-area: 1/1/2/2;
 }
 
 #logo {
