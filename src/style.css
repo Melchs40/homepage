@@ -788,10 +788,13 @@ button:hover {
   #nav-link-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4rem 18rem;
+    grid-template-rows: 4rem 0.5rem;
     justify-items: end;
     background-color: transparent;
     transition: all 0.5s linear;
+  }
+  #nav-link-container.clicked {
+    grid-template-rows: 4rem 18rem;
   }
   #mobile-nav-button {
     -webkit-appearance: none;

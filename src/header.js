@@ -104,8 +104,8 @@ mobileButton.style.backgroundColor = 'transparent';
 links.appendChild(mobileButton);
 
 mobileButton.addEventListener('click', function () {
-  //   links.classList.toggle('clicked');
   mobileButton.classList.toggle('clicked');
+  links.classList.add('clicked');
   mobileContainer.classList.toggle('active');
   mobileHome.classList.toggle('active');
   mobileAbout.classList.toggle('active');
@@ -136,8 +136,8 @@ mobileHome.addEventListener('click', function () {
     top: 0,
     behavior: 'smooth',
   });
-  //   links.classList.toggle('clicked');
   mobileButton.classList.toggle('clicked');
+  links.classList.add('clicked');
   mobileContainer.classList.toggle('active');
   mobileHome.classList.toggle('active');
   mobileAbout.classList.toggle('active');
@@ -163,6 +163,7 @@ mobileAbout.addEventListener('click', function () {
   });
   //   links.classList.toggle('clicked');
   mobileButton.classList.toggle('clicked');
+  links.classList.add('clicked');
   mobileContainer.classList.toggle('active');
   mobileHome.classList.toggle('active');
   mobileAbout.classList.toggle('active');
@@ -188,6 +189,7 @@ mobileProjects.addEventListener('click', function () {
   });
   //   links.classList.toggle('clicked');
   mobileButton.classList.toggle('clicked');
+  links.classList.add('clicked');
   mobileContainer.classList.toggle('active');
   mobileHome.classList.toggle('active');
   mobileAbout.classList.toggle('active');
@@ -213,6 +215,7 @@ mobileContact.addEventListener('click', function () {
   });
   //   links.classList.toggle('clicked');
   mobileButton.classList.toggle('clicked');
+  links.classList.add('clicked');
   mobileContainer.classList.toggle('active');
   mobileHome.classList.toggle('active');
   mobileAbout.classList.toggle('active');

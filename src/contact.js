@@ -1,6 +1,6 @@
 import Email from '../images/reshot-icon-email-message-QZWBGHKULS.svg';
 import PDFImage from '../images/reshot-icon-pdf-file-8W7GJ5ZKQP.svg';
-import myPDF from '../images/Samuel-C-Melchior-Resume.pdf';
+import myPNG from '../images/Samuel-C-Melchior-Resume.png';
 
 export let contact = document.createElement('div');
 contact.setAttribute('id', 'contact-section');
@@ -21,7 +21,7 @@ contactContainer.appendChild(contactTitle);
 let contactPara = document.createElement('h1');
 contactPara.classList.add('contact-para');
 contactPara.innerHTML =
-  "There are a few ways to get ahold of me, from LinkedIn to good old fashioned email to the handy contact form just below here. I've even included a PDF of my résumé for a more intensive viewing of my background. Feel free to reach out with any comments, concerns, compliments, or complaints. If you think we could have a mutually beneficial relationship in the world of web design, I'd love to hear from you!";
+  "There are a few ways to get ahold of me, from LinkedIn to good old fashioned email to the handy contact form just below here. I've even included a PNG file of my résumé for a more intensive viewing of my background. Feel free to reach out with any comments, concerns, compliments, or complaints. If you think we could have a mutually beneficial relationship in the world of web design, I'd love to hear from you!";
 contactContainer.appendChild(contactPara);
 
 let contactContent = document.createElement('div');
@@ -95,7 +95,7 @@ pdfButton.src = PDFImage;
 pdfButton.alt = 'PDF Link';
 pdfButton.tabIndex = 0;
 pdfButton.addEventListener('click', function () {
-  window.open(myPDF, '_blank');
+  window.open(myPNG, '_blank');
 });
 linksContainer.appendChild(pdfButton);
 
