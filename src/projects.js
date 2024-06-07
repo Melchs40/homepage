@@ -62,6 +62,7 @@ battleshipContainer.appendChild(battleshipTech);
 
 let battleshipImCon = document.createElement('div');
 battleshipImCon.classList.add('project-image-container-odd');
+battleshipImCon.setAttribute('id', 'battleship-image-container');
 battleshipContainer.appendChild(battleshipImCon);
 
 let battleshipImage = document.createElement('img');
@@ -86,11 +87,12 @@ weatherAppTitle.classList.add('project-title-even');
 weatherAppTitle.innerHTML = '2. Weather App';
 weatherAppContainer.appendChild(weatherAppTitle);
 
-let weatherappPara = document.createElement('p');
-weatherappPara.classList.add('project-para-even');
-weatherappPara.innerHTML =
+let weatherAppPara = document.createElement('p');
+weatherAppPara.classList.add('project-para-even');
+weatherAppPara.setAttribute('id', 'weather-app-para');
+weatherAppPara.innerHTML =
   'QuickWeather is a project that accesses Weather API through fetch requests to show the user the current conditions as well as future conditions for the next two days. An easy to use application designed with minimal bells and whistles to get users the weather they want quickly. The only animation that occurs is a shuffle when the page is loading the weather of a new city.';
-weatherAppContainer.appendChild(weatherappPara);
+weatherAppContainer.appendChild(weatherAppPara);
 
 let weatherAppSource = document.createElement('a');
 weatherAppSource.classList.add('project-source-even');
@@ -114,6 +116,7 @@ weatherAppContainer.appendChild(weatherAppTech);
 
 let weatherAppImCon = document.createElement('div');
 weatherAppImCon.classList.add('project-image-container-even');
+weatherAppImCon.setAttribute('id', 'weather-app-image-container');
 weatherAppContainer.appendChild(weatherAppImCon);
 
 let weatherAppImage = document.createElement('img');
@@ -166,6 +169,7 @@ todoContainer.appendChild(todoTech);
 
 let todoImCon = document.createElement('div');
 todoImCon.classList.add('project-image-container-odd');
+todoImCon.setAttribute('id', 'todo-image-container');
 todoContainer.appendChild(todoImCon);
 
 let todoImage = document.createElement('img');
@@ -192,6 +196,7 @@ restaurantContainer.appendChild(restaurantTitle);
 
 let restaurantPara = document.createElement('p');
 restaurantPara.classList.add('project-para-even');
+restaurantPara.setAttribute('id', 'restaurant-para');
 restaurantPara.innerHTML =
   'This project is a business webpage with different pages built within it. There is a main introductory splash page featuring information about the business as well as the company logo. Different modules were created for additional pages with buttons for them in the nav bar. These buttons include links to new pages which are for their products and specials, an events page, a contact us form (disabled on this example page), and one button that brings the user back to the home page.';
 restaurantContainer.appendChild(restaurantPara);
@@ -218,6 +223,7 @@ restaurantContainer.appendChild(restaurantTech);
 
 let restaurantImCon = document.createElement('div');
 restaurantImCon.classList.add('project-image-container-even');
+restaurantImCon.setAttribute('id', 'restaurant-image-container');
 restaurantContainer.appendChild(restaurantImCon);
 
 let restaurantImage = document.createElement('img');
@@ -269,6 +275,7 @@ libraryContainer.appendChild(libraryTech);
 
 let libraryImCon = document.createElement('div');
 libraryImCon.classList.add('project-image-container-odd');
+libraryImCon.setAttribute('id', 'library-image-container');
 libraryContainer.appendChild(libraryImCon);
 
 let libraryImage = document.createElement('img');

@@ -585,6 +585,7 @@ button:hover {
           appearance: none;
   background-color: white;
   color: black;
+  border: 2px solid black;
   margin-left: 7rem;
   margin-top: 9rem;
   border-radius: 2rem;
@@ -860,5 +861,18 @@ button:hover {
   #mobile-contact-button {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+  }
+  #battleship-image-container,
+  #todo-image-container {
+    margin-left: -1rem;
+  }
+  #library-image-container {
+    margin-left: -1rem;
+  }
+  #weather-app-para,
+  #weather-image-container,
+  #restaurant-para,
+  #restaurant-image-container {
+    margin-right: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
