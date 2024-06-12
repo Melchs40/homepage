@@ -10,8 +10,6 @@ button:hover {
 }
 
 #content {
-  max-width: 1200px;
-  margin: 0 auto;
   height: auto;
   background-color: white;
   padding-left: 3rem;
@@ -19,7 +17,6 @@ button:hover {
 }
 
 #nav-container {
-  max-width: 1200px;
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
