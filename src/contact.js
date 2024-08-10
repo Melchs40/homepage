@@ -1,6 +1,6 @@
 import Email from '../images/reshot-icon-email-message-QZWBGHKULS.svg';
 import FileImage from '../images/reshot-icon-resume-L4CTDEMPY6.svg';
-import MyPNG from '../images/Samuel-C-Melchior-Resume.png';
+import MyPNG from '../images/resume-png.png';
 
 export let contact = document.createElement('div');
 contact.setAttribute('id', 'contact-section');
